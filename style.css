@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Freefatfont";
+  src: url(freefatfont-regular.woff2), url(freefatfont-regular.woff);
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 30px 0;
+}
+header h1 {
+  letter-spacing: 5px;  
+}
+
+nav.navmobile{
+  display: none;
+}
+
+div.mob-wrapper{
+  display: none;
+  
+}
+
+
+body {
+  font-family: "Freefatfont";
+  font-size: 24px;
+  line-height: 1.25;
+  background-color: #edc7a9;
+  background-image: linear-gradient(180deg, #ffffff, rgba(255,255,255,0));
+ 	color: #000000;
+	height: 100vh; 
+  transition:0.5s;
+  grid-template-rows: auto 1fr auto;
+  z-index: 1;
+ 
+}
+
+
+h1 {
+  font-size: 24px;
+  color: #000000;
+  margin: 10px 0px 10px 0;
+}
+h2 {
+  font-size: 10vmin;
+  color: #ffdc00;
+  
+}
+
+a{
+  font-size: 24px;
+  color: #000000;
+  text-decoration: none;
+  margin: 0 0 0 32px;
+  transition: color 0.5s;
+}
+a:hover{
+  color: #ffdc00;
+}
+
+
+
+section { 
+  display: grid;
+  place-items: center;
+
+}
+
+section img{
+ 
+  max-height: 50vh;
+  position: relative;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+  
+section div.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #ffdc00;
+  border-radius: 50%;
+  position: relative;
+  transition:0.5s;
+ flex-wrap: wrap;
+ align-items: center;
+
+   }
+
+
+  
+  footer {
+    position:  relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+     }
+
+footer img{
+  margin: 0 10px 0 10px;
+  
+}
+
+
+
+@media (max-width: 420px) {
+
+ 
+  
+  body{
+    z-index: 1;
+  }
+  
+header {
+display: none;
+}
+  
+  div.mob-wrapper{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+  
+  nav.navmobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+} 
+nav.navmobile a {
+  color: #ffffff;
+  margin: 5px 32px 5px 32px;
+}
+  
+
+  
+  main{
+      position: relative;
+      display: grid;
+      place-items: center;
+      z-index: 1; 
+    	min-height: 100vh;
+      background-color: #edc7a9;
+      background-image: linear-gradient(180deg, #ffffff, rgba(255,255,255,0));
+    transition: transform 0.5s;
+  }
+  
+   main.open {
+    transform: translate(200px,0);
+  }
+  
+  footer{
+     z-index: 1;
+     position: fixed;
+  }
+  
+
+  
+}
+
+
