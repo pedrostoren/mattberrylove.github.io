@@ -38,6 +38,7 @@ body {
   transition:0.5s;
   grid-template-rows: auto 1fr auto;
   z-index: 1;
+	font-weight:500;
  
 }
 
